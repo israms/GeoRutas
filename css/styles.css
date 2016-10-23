@@ -1,0 +1,76 @@
+.list-item {
+	font-weight: normal;
+	color: red;
+}
+
+#map-canvas {
+	display: block;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0,255,0,0.5);
+	height: 100%;
+}
+
+.ui-icon-myicon-car:after {
+	background-image: url("images/car.png");
+	background-size: 16px 16px;
+	background-color: #fff;
+}
+
+.ui-icon-myicon-foot:after {
+	background-image: url("images/foot.png");
+	background-size: 16px 16px;
+	background-color: #fff;
+}
+
+.ui-icon-myicon-bike:after {
+	background-image: url("images/bike.png");
+	background-size: 16px 16px;
+	background-color: #fff;
+}
+
+.no-btn {
+	cursor: initial;
+	background-color: red;
+}
+
+#menu {
+	background-color: #0D77B6;
+color: #47A3DA;
+text-shadow: none;
+font-size: 1.25em;
+letter-spacing: 0.25em;
+}
+
+#compactar, 
+#reubicar, 
+#eliminar,
+#nav-panel ul li,
+#nav-panel label,
+#nav-panel h2,
+h1 {
+	text-shadow: none;
+	font-weight: normal;
+}
+
+#nav-panel {
+	background-color: #47A3DA;
+}
+
+h1 {
+	letter-spacing: 0.3em
+}
+
+#nav-panel .checkbox {
+	background-color: #8fccef;
+}
+
+#nav-panel .checkbox:hover {
+	background-color: #e1eff7;
+	color: #8fccef;
+}

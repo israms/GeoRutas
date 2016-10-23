@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GeoRutas v1.0</title>
+	<meta charset="uft-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="jquery.mobile-1.4.2/jquery.mobile-1.4.2.css">
+	<link rel="stylesheet" href="css/themes/georutas-custom-theme.min.css" />
+  <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="jquery.mobile-1.4.2/jquery.mobile.structure-1.4.2.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Droid+Sans+Mono' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/styles.css">
+	<script src="jquery/jquery-1.11.1-min.js"></script>
+	<script src="jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.js"></script>
+	<script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=true"></script>
+  	<script type="text/javascript" src="js/gmaps.js"></script>
+  	<script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+	<div data-role="page" id="map-page" >
+		<div data-role="header" data-position="fixed" data-theme="a">
+			<h1>GeoRutas</h1>
+			
+			<a href="#nav-panel" data-icon="bullets" data-iconpos="notext">Menu</a>
+		</div>
+
+		<div data-role="content" class="ui-content">
+			<div id="map-canvas"></div>
+		</div>
+
+		<!-- nav panel -->
+		<div data-role="panel" id="nav-panel" data-theme="a" data-display="overlay">
+			<ul data-role="listview">
+				<li data-icon="back" ><a id="menu" href="#" data-rel="close"><h1>Menu</h1></a></li>
+				<li data-icon="false"><a id="compactar" data-rel="close">Compactar Ruta</a></li>
+				<li data-icon="false"><a id="reubicar" data-rel="close">Centrar Ubicacion</a></li>
+				<li data-icon="false"><a id="eliminar" data-rel="close">Eliminar Rutas</a></li>
+				<li data-icon="false" class="ui-btn no-btn">Modo Viaje
+					 <form>
+	    				<fieldset data-role="controlgroup">
+					        <input type="radio"  name="modo" id="modo-coche" checked="checked">
+					        <label for="modo-coche" class="checkbox" data-rel="close">Coche<span class="ui-btn-icon-right ui-icon-myicon-car"></span></label>
+					        
+					        <input type="radio" name="modo" id="modo-pie">
+					        <label for="modo-pie" class="checkbox" data-rel="close">A pie<span class="ui-btn-icon-right ui-icon-myicon-foot"></span></label>
+					        <input type="radio" name="modo" id="modo-bici">
+					        <label for="modo-bici" class="checkbox" data-rel="close">Bicicleta<span class="ui-btn-icon-right ui-icon-myicon-bike"></span></label>
+	    				</fieldset>
+					</form>
+				</li>
+				<li class="ui-btn no-btn">
+					<form>
+     					<h2>Buscar direccion</h2>
+     					<input type="search" name="buscar" id="buscar" value="" placeholder="Escribe una direccion...">
+     					<!-- <button class="ui-btn ui-btn-inline ui-icon-delete ui-btn-icon-notext">Buscar</button> -->
+					</form>
+				</li>
+			</ul>
+		</div>
+		<!-- /nav panel -->
+	</div>
+</body>
+</html>
